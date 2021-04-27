@@ -14,6 +14,12 @@ This tool is used to test the frame rate on the iOS platform
 pod 'ZXKitFPS'
 ```
 
+this plugin supports `ZXKit`, if necessary, you can use the following command to integrate
+
+```
+pod 'ZXKitFPS/zxkit'
+```
+
 2、 Use files
 
 If you don’t want to use cocoapods integration, you can drag the contents of the `pod` folder in the root directory to the project.
@@ -23,6 +29,9 @@ If you don’t want to use cocoapods integration, you can drag the contents of t
 ```
 //Create an object
 let fps = ZXKitFPS()
+
+//If you need to display in the ZXKit toolset, you need to register, otherwise you don’t need to register
+fps.registZXKitPlugin()
 
 //start test
 fps.start { (fps) in

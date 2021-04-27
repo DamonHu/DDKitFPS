@@ -15,9 +15,7 @@ open class ZXKitFPS {
     private var complete: ((Int) -> Void)?
     var isRunning = false
 
-    public init() {
-
-    }
+    public init() {}
 
     public func start(success: ((Int) -> Void)?) {
         isRunning = true
