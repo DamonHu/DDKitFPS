@@ -1,0 +1,14 @@
+Pod::Spec.new do |s|
+s.name = 'ZXKitFPS'
+s.swift_version = '5.0'
+s.version = '0.0.1'
+s.license= { :type => "MIT", :file => "LICENSE" }
+s.summary = 'FPS test tool for iOS platform'
+s.homepage = 'https://github.com/ZXKitCode/FPS'
+s.authors = { 'ZXKitCode' => 'dong765@qq.com' }
+s.source = { :git => "https://github.com/ZXKitCode/FPS.git", :tag => s.version}
+s.requires_arc = true
+s.ios.deployment_target = '10.0'
+s.source_files = "pod/*.swift"
+s.documentation_url = 'http://blog.hudongdong.com/swift/1079.html'
+end
