@@ -12,12 +12,6 @@ FPS是图像领域中的定义，是指画面每秒传输帧数，通俗来讲�
 pod 'ZXKitFPS'
 ```
 
-该插件支持`ZXKit`，如果需要可以使用以下命令集成
-
-```
-pod 'ZXKitFPS/zxkit'
-```
-
 2、使用文件
 
 如果您不想使用cocoapods集成，可以将根目录下的`pod`文件夹中的内容拖到项目即可
@@ -28,9 +22,6 @@ pod 'ZXKitFPS/zxkit'
 //创建对象
 let fps = ZXKitFPS()
 
-//如果需要在ZXKit工具集显示，需要注册，不需要显示可以不注册
-fps.registZXKitPlugin()
-
 //开始测试
 fps.start { (fps) in
   print(fps)
@@ -38,6 +29,20 @@ fps.start { (fps) in
 
 //结束测试
 fps.stop()
+```
+
+## zxkit支持
+
+该插件支持`ZXKit`，如果需要在ZXKit工具集里显示，可以使用以下命令集成
+
+```
+pod 'ZXKitFPS/zxkit'
+```
+
+集成之后注册到工具即可在列表显示
+
+```
+ZXKit.regist(plugin: fps)
 ```
 
 ## License
