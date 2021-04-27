@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7C8042161BE5E6409F9B10 /* Pods_ZXKitFPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBD97C3DCB7778C1B86AAE6 /* Pods_ZXKitFPS.framework */; };
 		E4AC95E32637F976001FC322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC95E22637F976001FC322 /* AppDelegate.swift */; };
 		E4AC95E52637F976001FC322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC95E42637F976001FC322 /* SceneDelegate.swift */; };
 		E4AC95E72637F976001FC322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC95E62637F976001FC322 /* ViewController.swift */; };
@@ -14,9 +15,14 @@
 		E4AC95EC2637F97B001FC322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AC95EB2637F97B001FC322 /* Assets.xcassets */; };
 		E4AC95EF2637F97B001FC322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AC95ED2637F97B001FC322 /* LaunchScreen.storyboard */; };
 		E4AC95F926380400001FC322 /* ZXKitFPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC95F8263803FF001FC322 /* ZXKitFPS.swift */; };
+		E4AC960E26381BFA001FC322 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E4AC960D26381BFA001FC322 /* logo.png */; };
+		E4AC961226381C1C001FC322 /* ZXKitFPS+zxkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC961126381C1C001FC322 /* ZXKitFPS+zxkit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30AA5A1B4D5EF05193E63461 /* Pods-ZXKitFPS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXKitFPS.debug.xcconfig"; path = "Target Support Files/Pods-ZXKitFPS/Pods-ZXKitFPS.debug.xcconfig"; sourceTree = "<group>"; };
+		6CBD97C3DCB7778C1B86AAE6 /* Pods_ZXKitFPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXKitFPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7264BEDCCFA0B88CD9318C2 /* Pods-ZXKitFPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXKitFPS.release.xcconfig"; path = "Target Support Files/Pods-ZXKitFPS/Pods-ZXKitFPS.release.xcconfig"; sourceTree = "<group>"; };
 		E4AC95DF2637F976001FC322 /* ZXKitFPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXKitFPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AC95E22637F976001FC322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4AC95E42637F976001FC322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		E4AC95EE2637F97B001FC322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4AC95F02637F97B001FC322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4AC95F8263803FF001FC322 /* ZXKitFPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXKitFPS.swift; sourceTree = "<group>"; };
+		E4AC960D26381BFA001FC322 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E4AC961126381C1C001FC322 /* ZXKitFPS+zxkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZXKitFPS+zxkit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7C8042161BE5E6409F9B10 /* Pods_ZXKitFPS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C25341D2C062415A69F6652 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30AA5A1B4D5EF05193E63461 /* Pods-ZXKitFPS.debug.xcconfig */,
+				A7264BEDCCFA0B88CD9318C2 /* Pods-ZXKitFPS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E4AC95D62637F976001FC322 = {
 			isa = PBXGroup;
 			children = (
 				E4AC95E12637F976001FC322 /* ZXKitFPS */,
 				E4AC95E02637F976001FC322 /* Products */,
+				7C25341D2C062415A69F6652 /* Pods */,
+				F3AD8C1B152D0218522A5EB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,10 +93,44 @@
 		E4AC95F72637FF45001FC322 /* pod */ = {
 			isa = PBXGroup;
 			children = (
+				E4AC961026381C03001FC322 /* zxkit */,
+				E4AC960B26381BFA001FC322 /* assets */,
 				E4AC95F8263803FF001FC322 /* ZXKitFPS.swift */,
 			);
 			name = pod;
 			path = ../../pod;
+			sourceTree = "<group>";
+		};
+		E4AC960B26381BFA001FC322 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E4AC960C26381BFA001FC322 /* icon */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		E4AC960C26381BFA001FC322 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				E4AC960D26381BFA001FC322 /* logo.png */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		E4AC961026381C03001FC322 /* zxkit */ = {
+			isa = PBXGroup;
+			children = (
+				E4AC961126381C1C001FC322 /* ZXKitFPS+zxkit.swift */,
+			);
+			path = zxkit;
+			sourceTree = "<group>";
+		};
+		F3AD8C1B152D0218522A5EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CBD97C3DCB7778C1B86AAE6 /* Pods_ZXKitFPS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4AC95F32637F97B001FC322 /* Build configuration list for PBXNativeTarget "ZXKitFPS" */;
 			buildPhases = (
+				04B214C4011C89EB71C04A0A /* [CP] Check Pods Manifest.lock */,
 				E4AC95DB2637F976001FC322 /* Sources */,
 				E4AC95DC2637F976001FC322 /* Frameworks */,
 				E4AC95DD2637F976001FC322 /* Resources */,
+				5622EED5D7B7BAE66643DCD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4AC960E26381BFA001FC322 /* logo.png in Resources */,
 				E4AC95EF2637F97B001FC322 /* LaunchScreen.storyboard in Resources */,
 				E4AC95EC2637F97B001FC322 /* Assets.xcassets in Resources */,
 				E4AC95EA2637F976001FC322 /* Main.storyboard in Resources */,
@@ -143,6 +200,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04B214C4011C89EB71C04A0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZXKitFPS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5622EED5D7B7BAE66643DCD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXKitFPS/Pods-ZXKitFPS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXKitFPS/Pods-ZXKitFPS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZXKitFPS/Pods-ZXKitFPS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4AC95DB2637F976001FC322 /* Sources */ = {
@@ -152,6 +251,7 @@
 				E4AC95F926380400001FC322 /* ZXKitFPS.swift in Sources */,
 				E4AC95E72637F976001FC322 /* ViewController.swift in Sources */,
 				E4AC95E32637F976001FC322 /* AppDelegate.swift in Sources */,
+				E4AC961226381C1C001FC322 /* ZXKitFPS+zxkit.swift in Sources */,
 				E4AC95E52637F976001FC322 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +396,7 @@
 		};
 		E4AC95F42637F97B001FC322 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30AA5A1B4D5EF05193E63461 /* Pods-ZXKitFPS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +415,7 @@
 		};
 		E4AC95F52637F97B001FC322 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7264BEDCCFA0B88CD9318C2 /* Pods-ZXKitFPS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

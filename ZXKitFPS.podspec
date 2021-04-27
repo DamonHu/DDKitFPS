@@ -9,6 +9,17 @@ s.authors = { 'ZXKitCode' => 'dong765@qq.com' }
 s.source = { :git => "https://github.com/ZXKitCode/FPS.git", :tag => s.version}
 s.requires_arc = true
 s.ios.deployment_target = '10.0'
-s.source_files = "pod/*.swift"
+s.subspec 'core' do |cs|
+    cs.source_files = "pod/*.swift"
+end
+s.subspec 'zxkit' do |cs|
+    cs.resource_bundles = {
+      'ZXKitFPS' => ['pod/assets/**/*.png']
+    }
+    cs.dependency 'ZXKitFPS/core'
+    cs.dependency 'ZXKitCore/core'
+    cs.source_files = "pod/zxkit/*.swift"
+end
+s.default_subspecs = "core"
 s.documentation_url = 'http://blog.hudongdong.com/swift/1079.html'
 end

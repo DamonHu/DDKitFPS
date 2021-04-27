@@ -13,18 +13,21 @@ open class ZXKitFPS {
     private var lastTime: TimeInterval = 0
     private var count = 0
     private var complete: ((Int) -> Void)?
+    var isRunning = false
 
     public init() {
 
     }
 
     public func start(success: ((Int) -> Void)?) {
+        isRunning = true
         self.complete = success
         self.displayLink = CADisplayLink(target: self, selector: #selector(tick(link:)))
         self.displayLink?.add(to: RunLoop.main, forMode: .common)
     }
 
     public func stop() {
+        isRunning = false
         self.displayLink?.invalidate()
     }
 }

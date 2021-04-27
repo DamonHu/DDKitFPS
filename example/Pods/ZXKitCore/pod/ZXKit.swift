@@ -1,0 +1,96 @@
+//
+//  ZXKit.swift
+//  ZXKit
+//
+//  Created by Damon on 2021/4/23.
+//
+
+import UIKit
+
+public extension NSNotification.Name {
+    static let ZXKitPluginRegist = NSNotification.Name("ZXKitPluginRegist")
+    static let ZXKitShow = NSNotification.Name("ZXKitShow")
+    static let ZXKitHide = NSNotification.Name("ZXKitHide")
+    static let ZXKitClose = NSNotification.Name("ZXKitClose")
+}
+
+public class ZXKit: NSObject {
+    private static var window: ZXKitWindow?
+    private static var floatWindow: ZXKitFloatWindow?
+    static var pluginList = [[ZXKitPluginProtocol](), [ZXKitPluginProtocol](), [ZXKitPluginProtocol]()]
+    public static var floatButton: UIButton? {
+        return self.floatWindow?.mButton
+    }
+
+    public static func regist(plugin: ZXKitPluginProtocol) {
+        NotificationCenter.default.post(name: .ZXKitPluginRegist, object: plugin)
+        switch plugin.pluginType {
+            case .ui:
+                self.pluginList[0].append(plugin)
+            case .data:
+                self.pluginList[1].append(plugin)
+            case .other:
+                self.pluginList[2].append(plugin)
+        }
+        if let window = self.window, !window.isHidden {
+            DispatchQueue.main.async {
+                window.reloadData()
+            }
+        }
+    }
+
+    public static func show() {
+        NotificationCenter.default.post(name: .ZXKitShow, object: nil)
+        self.floatWindow?.isHidden = true
+        DispatchQueue.main.async {
+            if let window = self.window {
+                window.isHidden = false
+            } else {
+                if #available(iOS 13.0, *) {
+                    for windowScene:UIWindowScene in ((UIApplication.shared.connectedScenes as? Set<UIWindowScene>)!) {
+                        if windowScene.activationState == .foregroundActive {
+                            self.window = ZXKitWindow(windowScene: windowScene)
+                            self.window?.frame = UIScreen.main.bounds
+                        }
+                    }
+                }
+                if self.window == nil {
+                    self.window = ZXKitWindow(frame: UIScreen.main.bounds)
+                }
+                self.window?.isHidden = false
+            }
+        }
+    }
+
+    public static func hide() {
+        NotificationCenter.default.post(name: .ZXKitHide, object: nil)
+        DispatchQueue.main.async {
+            self.window?.isHidden = true
+            //float window
+            if let window = self.floatWindow {
+                window.isHidden = false
+            } else {
+                if #available(iOS 13.0, *) {
+                    for windowScene:UIWindowScene in ((UIApplication.shared.connectedScenes as? Set<UIWindowScene>)!) {
+                        if windowScene.activationState == .foregroundActive {
+                            self.floatWindow = ZXKitFloatWindow(windowScene: windowScene)
+                            self.floatWindow?.frame = CGRect(x: UIScreen.main.bounds.size.width - 80, y: 100, width: 60, height: 60)
+                        }
+                    }
+                }
+                if self.floatWindow == nil {
+                    self.floatWindow = ZXKitFloatWindow(frame: CGRect(x: UIScreen.main.bounds.size.width - 80, y: 100, width: 60, height: 60))
+                }
+                self.floatWindow?.isHidden = false
+            }
+        }
+    }
+
+    public static func close() {
+        NotificationCenter.default.post(name: .ZXKitClose, object: nil)
+        DispatchQueue.main.async {
+            self.window?.isHidden = true
+            self.floatWindow?.isHidden = true
+        }
+    }
+}
