@@ -42,7 +42,7 @@ pod 'ZXKitFPS/zxkit'
 集成之后注册到工具即可在列表显示
 
 ```
-ZXKit.regist(plugin: fps)
+fps.registZXKitPlugin()
 ```
 
 ## License
