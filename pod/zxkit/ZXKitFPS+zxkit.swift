@@ -32,7 +32,7 @@ extension ZXKitFPS: ZXKitPluginProtocol {
     }
     
     public var pluginType: ZXKitPluginType {
-        return .data
+        return .ui
     }
     
     public func start() {
