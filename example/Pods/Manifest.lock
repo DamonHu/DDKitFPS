@@ -1,6 +1,6 @@
 PODS:
   - SnapKit (5.0.1)
-  - ZXKitCore/core (0.0.15):
+  - ZXKitCore/core (0.1.1):
     - SnapKit
     - ZXKitUtil
   - ZXKitUtil (0.0.8):
@@ -18,7 +18,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  ZXKitCore: 6f952404670b4b80305d679ef7604bbab9e7e528
+  ZXKitCore: 2be2db255567163ad6c5f0ec27758643db18d8cb
   ZXKitUtil: 3e4847994fbea5751bdef7e6bda6ff40a60b3493
 
 PODFILE CHECKSUM: 6448b6c97c45a417ce6e6f8e2624910d8fdc0d69
