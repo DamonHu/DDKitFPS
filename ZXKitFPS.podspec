@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name = 'ZXKitFPS'
 s.swift_version = '5.0'
-s.version = '0.0.4'
+s.version = '0.0.5'
 s.license= { :type => "MIT", :file => "LICENSE" }
 s.summary = 'FPS test tool for iOS platform'
 s.homepage = 'https://github.com/ZXKitCode/FPS'
