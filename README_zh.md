@@ -31,7 +31,9 @@ fps.start { (fps) in
 fps.stop()
 ```
 
-## zxkit支持
+## ZXKit支持
+
+**该插件已经默认集成在[ZXKitSwift](https://github.com/ZXKitCode/ZXKitSwift)中，如果您已经集成了`ZXKitSwift`，无需重复集成**
 
 该插件支持`ZXKit`，如果需要在ZXKit工具集里显示，可以使用以下命令集成
 
@@ -39,10 +41,16 @@ fps.stop()
 pod 'ZXKitFPS/zxkit'
 ```
 
-集成之后注册到工具即可在列表显示
+之后可在`AppDelegate`的启动函数中注册到`ZXKit`即可
 
 ```
-fps.registZXKitPlugin()
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+	
+	let fps = ZXKitFPS()
+	fps.registZXKitPlugin()
+	
+	return true
+}
 ```
 
 ## License
