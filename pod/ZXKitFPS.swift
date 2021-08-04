@@ -22,6 +22,9 @@ open class ZXKitFPS {
     public init() {}
 
     public func start(success: ((Int) -> Void)?) {
+        if self.isRunning {
+            self.stop()
+        }
         isRunning = true
         self.complete = success
         self.displayLink = CADisplayLink(target: self, selector: #selector(tick(link:)))
