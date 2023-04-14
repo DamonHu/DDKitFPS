@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ZXKitCore
 
 class ViewController: UIViewController {
     let fps = ZXKitFPS()
@@ -14,11 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        fps.start { (fps) in
-//            print(fps)
-//        }
         self.createUI()
-        fps.registZXKitPlugin()
     }
     
     func createUI() {
@@ -30,7 +25,9 @@ class ViewController: UIViewController {
     }
 
     @objc func _click() {
-        ZXKit.show()
+        fps.start { (fps) in
+            print(fps)
+        }
     }
 
 

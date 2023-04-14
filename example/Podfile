@@ -6,5 +6,5 @@ target 'ZXKitFPS' do
   use_frameworks!
 
   # Pods for ZXKitFPS
-  pod 'ZXKitCore/core'
+  
 end

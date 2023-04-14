@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,8 +15,6 @@
 		E4AC95EC2637F97B001FC322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AC95EB2637F97B001FC322 /* Assets.xcassets */; };
 		E4AC95EF2637F97B001FC322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AC95ED2637F97B001FC322 /* LaunchScreen.storyboard */; };
 		E4AC95F926380400001FC322 /* ZXKitFPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC95F8263803FF001FC322 /* ZXKitFPS.swift */; };
-		E4AC960E26381BFA001FC322 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E4AC960D26381BFA001FC322 /* logo.png */; };
-		E4AC961226381C1C001FC322 /* ZXKitFPS+zxkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC961126381C1C001FC322 /* ZXKitFPS+zxkit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +30,6 @@
 		E4AC95EE2637F97B001FC322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4AC95F02637F97B001FC322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4AC95F8263803FF001FC322 /* ZXKitFPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXKitFPS.swift; sourceTree = "<group>"; };
-		E4AC960D26381BFA001FC322 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		E4AC961126381C1C001FC322 /* ZXKitFPS+zxkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZXKitFPS+zxkit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,36 +89,10 @@
 		E4AC95F72637FF45001FC322 /* pod */ = {
 			isa = PBXGroup;
 			children = (
-				E4AC961026381C03001FC322 /* zxkit */,
-				E4AC960B26381BFA001FC322 /* assets */,
 				E4AC95F8263803FF001FC322 /* ZXKitFPS.swift */,
 			);
 			name = pod;
 			path = ../../pod;
-			sourceTree = "<group>";
-		};
-		E4AC960B26381BFA001FC322 /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				E4AC960C26381BFA001FC322 /* icon */,
-			);
-			path = assets;
-			sourceTree = "<group>";
-		};
-		E4AC960C26381BFA001FC322 /* icon */ = {
-			isa = PBXGroup;
-			children = (
-				E4AC960D26381BFA001FC322 /* logo.png */,
-			);
-			path = icon;
-			sourceTree = "<group>";
-		};
-		E4AC961026381C03001FC322 /* zxkit */ = {
-			isa = PBXGroup;
-			children = (
-				E4AC961126381C1C001FC322 /* ZXKitFPS+zxkit.swift */,
-			);
-			path = zxkit;
 			sourceTree = "<group>";
 		};
 		F3AD8C1B152D0218522A5EB1 /* Frameworks */ = {
@@ -144,7 +114,6 @@
 				E4AC95DB2637F976001FC322 /* Sources */,
 				E4AC95DC2637F976001FC322 /* Frameworks */,
 				E4AC95DD2637F976001FC322 /* Resources */,
-				5622EED5D7B7BAE66643DCD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,7 +161,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4AC960E26381BFA001FC322 /* logo.png in Resources */,
 				E4AC95EF2637F97B001FC322 /* LaunchScreen.storyboard in Resources */,
 				E4AC95EC2637F97B001FC322 /* Assets.xcassets in Resources */,
 				E4AC95EA2637F976001FC322 /* Main.storyboard in Resources */,
@@ -224,23 +192,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5622EED5D7B7BAE66643DCD0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZXKitFPS/Pods-ZXKitFPS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZXKitFPS/Pods-ZXKitFPS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZXKitFPS/Pods-ZXKitFPS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -251,7 +202,6 @@
 				E4AC95F926380400001FC322 /* ZXKitFPS.swift in Sources */,
 				E4AC95E72637F976001FC322 /* ViewController.swift in Sources */,
 				E4AC95E32637F976001FC322 /* AppDelegate.swift in Sources */,
-				E4AC961226381C1C001FC322 /* ZXKitFPS+zxkit.swift in Sources */,
 				E4AC95E52637F976001FC322 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
