@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ZXKitFPS
+//  DDKitFPS
 //
 //  Created by Damon on 2021/4/27.
 //
@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let fps = ZXKitFPS()
+    let fps = DDKitFPS()
    
     override func viewDidLoad() {
         super.viewDidLoad()

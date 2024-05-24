@@ -7,21 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B7C8042161BE5E6409F9B10 /* Pods_ZXKitFPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBD97C3DCB7778C1B86AAE6 /* Pods_ZXKitFPS.framework */; };
 		E4AC95E32637F976001FC322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC95E22637F976001FC322 /* AppDelegate.swift */; };
 		E4AC95E52637F976001FC322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC95E42637F976001FC322 /* SceneDelegate.swift */; };
 		E4AC95E72637F976001FC322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC95E62637F976001FC322 /* ViewController.swift */; };
 		E4AC95EA2637F976001FC322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AC95E82637F976001FC322 /* Main.storyboard */; };
 		E4AC95EC2637F97B001FC322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4AC95EB2637F97B001FC322 /* Assets.xcassets */; };
 		E4AC95EF2637F97B001FC322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4AC95ED2637F97B001FC322 /* LaunchScreen.storyboard */; };
-		E4AC95F926380400001FC322 /* ZXKitFPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC95F8263803FF001FC322 /* ZXKitFPS.swift */; };
+		E4AC95F926380400001FC322 /* DDKitFPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AC95F8263803FF001FC322 /* DDKitFPS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		30AA5A1B4D5EF05193E63461 /* Pods-ZXKitFPS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXKitFPS.debug.xcconfig"; path = "Target Support Files/Pods-ZXKitFPS/Pods-ZXKitFPS.debug.xcconfig"; sourceTree = "<group>"; };
-		6CBD97C3DCB7778C1B86AAE6 /* Pods_ZXKitFPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXKitFPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7264BEDCCFA0B88CD9318C2 /* Pods-ZXKitFPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXKitFPS.release.xcconfig"; path = "Target Support Files/Pods-ZXKitFPS/Pods-ZXKitFPS.release.xcconfig"; sourceTree = "<group>"; };
-		E4AC95DF2637F976001FC322 /* ZXKitFPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXKitFPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4AC95DF2637F976001FC322 /* DDKitFPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDKitFPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AC95E22637F976001FC322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4AC95E42637F976001FC322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E4AC95E62637F976001FC322 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +25,7 @@
 		E4AC95EB2637F97B001FC322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4AC95EE2637F97B001FC322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4AC95F02637F97B001FC322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4AC95F8263803FF001FC322 /* ZXKitFPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXKitFPS.swift; sourceTree = "<group>"; };
+		E4AC95F8263803FF001FC322 /* DDKitFPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDKitFPS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,28 +33,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B7C8042161BE5E6409F9B10 /* Pods_ZXKitFPS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7C25341D2C062415A69F6652 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				30AA5A1B4D5EF05193E63461 /* Pods-ZXKitFPS.debug.xcconfig */,
-				A7264BEDCCFA0B88CD9318C2 /* Pods-ZXKitFPS.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		E4AC95D62637F976001FC322 = {
 			isa = PBXGroup;
 			children = (
-				E4AC95E12637F976001FC322 /* ZXKitFPS */,
+				E4AC95E12637F976001FC322 /* DDKitFPS */,
 				E4AC95E02637F976001FC322 /* Products */,
-				7C25341D2C062415A69F6652 /* Pods */,
 				F3AD8C1B152D0218522A5EB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -66,12 +51,12 @@
 		E4AC95E02637F976001FC322 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4AC95DF2637F976001FC322 /* ZXKitFPS.app */,
+				E4AC95DF2637F976001FC322 /* DDKitFPS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E4AC95E12637F976001FC322 /* ZXKitFPS */ = {
+		E4AC95E12637F976001FC322 /* DDKitFPS */ = {
 			isa = PBXGroup;
 			children = (
 				E4AC95F72637FF45001FC322 /* pod */,
@@ -83,13 +68,13 @@
 				E4AC95ED2637F97B001FC322 /* LaunchScreen.storyboard */,
 				E4AC95F02637F97B001FC322 /* Info.plist */,
 			);
-			path = ZXKitFPS;
+			path = DDKitFPS;
 			sourceTree = "<group>";
 		};
 		E4AC95F72637FF45001FC322 /* pod */ = {
 			isa = PBXGroup;
 			children = (
-				E4AC95F8263803FF001FC322 /* ZXKitFPS.swift */,
+				E4AC95F8263803FF001FC322 /* DDKitFPS.swift */,
 			);
 			name = pod;
 			path = ../../pod;
@@ -98,7 +83,6 @@
 		F3AD8C1B152D0218522A5EB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6CBD97C3DCB7778C1B86AAE6 /* Pods_ZXKitFPS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,11 +90,10 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4AC95DE2637F976001FC322 /* ZXKitFPS */ = {
+		E4AC95DE2637F976001FC322 /* DDKitFPS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4AC95F32637F97B001FC322 /* Build configuration list for PBXNativeTarget "ZXKitFPS" */;
+			buildConfigurationList = E4AC95F32637F97B001FC322 /* Build configuration list for PBXNativeTarget "DDKitFPS" */;
 			buildPhases = (
-				04B214C4011C89EB71C04A0A /* [CP] Check Pods Manifest.lock */,
 				E4AC95DB2637F976001FC322 /* Sources */,
 				E4AC95DC2637F976001FC322 /* Frameworks */,
 				E4AC95DD2637F976001FC322 /* Resources */,
@@ -119,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = ZXKitFPS;
+			name = DDKitFPS;
 			productName = ZXKitFPS;
-			productReference = E4AC95DF2637F976001FC322 /* ZXKitFPS.app */;
+			productReference = E4AC95DF2637F976001FC322 /* DDKitFPS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E4AC95DA2637F976001FC322 /* Build configuration list for PBXProject "ZXKitFPS" */;
+			buildConfigurationList = E4AC95DA2637F976001FC322 /* Build configuration list for PBXProject "DDKitFPS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -151,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4AC95DE2637F976001FC322 /* ZXKitFPS */,
+				E4AC95DE2637F976001FC322 /* DDKitFPS */,
 			);
 		};
 /* End PBXProject section */
@@ -169,37 +152,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		04B214C4011C89EB71C04A0A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZXKitFPS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		E4AC95DB2637F976001FC322 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4AC95F926380400001FC322 /* ZXKitFPS.swift in Sources */,
+				E4AC95F926380400001FC322 /* DDKitFPS.swift in Sources */,
 				E4AC95E72637F976001FC322 /* ViewController.swift in Sources */,
 				E4AC95E32637F976001FC322 /* AppDelegate.swift in Sources */,
 				E4AC95E52637F976001FC322 /* SceneDelegate.swift in Sources */,
@@ -346,17 +304,16 @@
 		};
 		E4AC95F42637F97B001FC322 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30AA5A1B4D5EF05193E63461 /* Pods-ZXKitFPS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ZXKitFPS/Info.plist;
+				INFOPLIST_FILE = DDKitFPS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lazypig.ZXKitFPS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazypig.DDKitFPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,17 +322,16 @@
 		};
 		E4AC95F52637F97B001FC322 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7264BEDCCFA0B88CD9318C2 /* Pods-ZXKitFPS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ZXKitFPS/Info.plist;
+				INFOPLIST_FILE = DDKitFPS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lazypig.ZXKitFPS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazypig.DDKitFPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4AC95DA2637F976001FC322 /* Build configuration list for PBXProject "ZXKitFPS" */ = {
+		E4AC95DA2637F976001FC322 /* Build configuration list for PBXProject "DDKitFPS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4AC95F12637F97B001FC322 /* Debug */,
@@ -394,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4AC95F32637F97B001FC322 /* Build configuration list for PBXNativeTarget "ZXKitFPS" */ = {
+		E4AC95F32637F97B001FC322 /* Build configuration list for PBXNativeTarget "DDKitFPS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4AC95F42637F97B001FC322 /* Debug */,

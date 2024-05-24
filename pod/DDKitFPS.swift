@@ -1,6 +1,6 @@
 //
-//  ZXKitFPS.swift
-//  ZXKitFPS
+//  DDKitFPS.swift
+//  DDKitFPS
 //
 //  Created by Damon on 2021/4/27.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-open class ZXKitFPS {
+open class DDKitFPS {
     private var displayLink: CADisplayLink?     //fps显示
     private var lastTime: TimeInterval = 0
     private var count = 0
@@ -35,7 +35,7 @@ open class ZXKitFPS {
     }
 }
 
-private extension ZXKitFPS {
+private extension DDKitFPS {
     @objc func tick(link: CADisplayLink) {
         guard lastTime != 0 else {
             lastTime = link.timestamp
