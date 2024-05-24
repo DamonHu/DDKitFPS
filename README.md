@@ -1,44 +1,48 @@
-# FPS
+# DDKitFPS
 
 ![](https://img.shields.io/badge/CocoaPods-supported-brightgreen) ![](https://img.shields.io/badge/Swift-5.0-brightgreen) ![](https://img.shields.io/badge/License-MIT-brightgreen) ![](https://img.shields.io/badge/version-iOS11.0-brightgreen)
 
-[English](./README_en.md)
+### [中文文档](https://ddceo.com/blog/1283.html)
 
-如果您需要的是快速集成多个调试功能，例如日志查看、网速测试、文件查看等功能，请使用 [DamonHu/ZXKitSwift](https://github.com/DamonHu/ZXKitSwift)。
 
-**该插件已经默认集成在[ZXKitSwift](https://github.com/DamonHu/ZXKitSwift)中，如果您已经集成了`ZXKitSwift`，无需重复集成该插件**
+If you need to quickly integrate multiple debugging functions, such as log viewing, network speed testing, file viewing and so on, please use [DamonHu/ZXKitSwift](https://github.com/DamonHu/ZXKitSwift)
 
-FPS是图像领域中的定义，是指画面每秒传输帧数，通俗来讲就是指动画或视频的画面数。FPS是测量用于保存、显示动态视频的信息数量。每秒钟帧数越多，所显示的动作就会越流畅。通常，要避免动作不流畅的最低是30。
+The plug-in has been integrated in [ZXKitSwift](https://github.com/DamonHu/ZXKitSwift) by default, if you have already integrated `ZXKitSwift`, there is no need to repeat the integration
 
-该工具用来iOS平台测试帧率
+FPS is a definition in the field of imagery, which refers to the number of frames transmitted per second, in general, refers to the number of frames of animation or video. FPS is a measure of the amount of information used to save and display dynamic videos. The more frames per second, the smoother the displayed action will be. In general, the minimum required to avoid jerky movements is 30.
 
-# 集成
+This tool is used to test the frame rate on the iOS platform
 
-1、可以使用cocoapods集成
+# Integration
 
-```
-pod 'ZXKitFPS'
-```
-
-2、使用文件
-
-如果您不想使用cocoapods集成，可以将根目录下的`pod`文件夹中的内容拖到项目即可
-
-## 使用
+1、 You can use cocoapods integration
 
 ```
-//创建对象
-let fps = ZXKitFPS()
+pod 'DDKitFPS'
+```
 
-//开始测试
+2、 Use files
+
+If you don’t want to use cocoapods integration, you can drag the contents of the `pod` folder in the root directory to the project.
+
+## Use
+
+```
+//Create an object
+let fps = DDKitFPS()
+
+//If you need to display in the ZXKit toolset, you need to register, otherwise you don’t need to register
+fps.registZXKitPlugin()
+
+//start test
 fps.start { (fps) in
   print(fps)
 }
 
-//结束测试
+//end test
 fps.stop()
 ```
 
 ## License
 
-该项目基于MIT协议，您可以自由修改使用
+The project is based on the MIT License
