@@ -4,11 +4,6 @@
 
 ### [中文文档](https://ddceo.com/blog/1283.html)
 
-
-If you need to quickly integrate multiple debugging functions, such as log viewing, network speed testing, file viewing and so on, please use [DamonHu/ZXKitSwift](https://github.com/DamonHu/ZXKitSwift)
-
-The plug-in has been integrated in [ZXKitSwift](https://github.com/DamonHu/ZXKitSwift) by default, if you have already integrated `ZXKitSwift`, there is no need to repeat the integration
-
 FPS is a definition in the field of imagery, which refers to the number of frames transmitted per second, in general, refers to the number of frames of animation or video. FPS is a measure of the amount of information used to save and display dynamic videos. The more frames per second, the smoother the displayed action will be. In general, the minimum required to avoid jerky movements is 30.
 
 This tool is used to test the frame rate on the iOS platform
